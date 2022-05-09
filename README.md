@@ -23,6 +23,15 @@ will give this output:
 47 291 237,31 czterdzieści siedem milionów dwieście dziewięćdziesiąt jeden tysięcy dwieście trzydzieści siedemzłotych i trzydzieści jeden groszy
 ```
 
+## Instalation:
+```
+npm i numbers-to-pl-words
+```
+and you can import all functions:
+```
+import { numberToWords, convertIntPriceToWords, convertPriceToWords } from 'numbers-to-pl-words';
+```
+
 ## Local Run:
 ```
 npm rub build
@@ -39,4 +48,4 @@ Prosta biblioteka do konwersji liczb i kwot na zapis tekstowy
 
 - [ ] Write tests.
 - [ ] Add types.
-- [ ] Publish on NPM.
+- [x] Publish on NPM.

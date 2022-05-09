@@ -1,8 +1,8 @@
 {
   "name": "numbers-to-pl-words",
   "type": "module",
-  "version": "0.0.1",
-  "description": "",
+  "version": "0.1.1",
+  "description": "convert numbers and prices to word represnatation in poilsh",
   "main": "./dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -13,14 +13,15 @@
     "url": "git+https://github.com/wojtekw92/numbersToWords.git"
   },
   "files": [
-      "./dist/index.js"
+      "dist/index.js"
   ],
-  "author": "wwozniak92@gmail.com",
+  "author": "Wojciech Wozniak <wwozniak92@gmail.com> (https://wwozniak.com)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/wojtekw92/numbersToWords/issues"
   },
   "homepage": "https://github.com/wojtekw92/numbersToWords#readme",
+  "dependencies": {},
   "devDependencies": {
     "esbuild": "^0.14.38",
     "jest": "^28.1.0",
