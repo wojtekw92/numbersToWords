@@ -36,6 +36,7 @@ Prosta biblioteka do konwersji liczb i kwot na zapis tekstowy
 
 
 # TODO:
-[ ] Write tests.
-[ ] Add types.
-[ ] Publish on NPM.
+
+- [ ] Write tests.
+- [ ] Add types.
+- [ ] Publish on NPM.
