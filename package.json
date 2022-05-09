@@ -1,5 +1,5 @@
 {
-  "name": "numbers-to-words-pl",
+  "name": "numbers-to-pl-words",
   "type": "module",
   "version": "0.0.1",
   "description": "",
@@ -12,6 +12,9 @@
     "type": "git",
     "url": "git+https://github.com/wojtekw92/numbersToWords.git"
   },
+  "files": [
+      "./dist/index.js"
+  ],
   "author": "wwozniak92@gmail.com",
   "license": "MIT",
   "bugs": {
