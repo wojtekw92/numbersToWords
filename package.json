@@ -1,0 +1,26 @@
+{
+  "name": "numbers-to-words-pl",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/.bin/esbuild ./src/index.js --format=esm --bundle --outfile=./dist/index.js --platform=node --target=node16.3 --minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wojtekw92/numbersToWords.git"
+  },
+  "author": "wwozniak92@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wojtekw92/numbersToWords/issues"
+  },
+  "homepage": "https://github.com/wojtekw92/numbersToWords#readme",
+  "devDependencies": {
+    "esbuild": "^0.14.38",
+    "jest": "^28.1.0",
+    "jest-cli": "^28.1.0"
+  }
+}
