@@ -22,6 +22,6 @@ console.log('2219,8: ' + convertIntPriceToWords(2219, 8));
 console.log('78346,47: ' + convertIntPriceToWords(78346, 47));
 console.log('891456,69: ' + convertIntPriceToWords(891456, 69));
 console.log('1808271,80: ' + convertIntPriceToWords(1808271, 80));
-console.log('47291237,31 ' + convertIntPriceToWords(47291237,31));
+console.log('47 291 237,31 ' + convertIntPriceToWords(47291237,31));
 
 console.log('47 291 237,31 ' + convertPriceToWords(47291237.31));
