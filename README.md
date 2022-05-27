@@ -25,11 +25,11 @@ will give this output:
 
 ## Instalation:
 ```
-npm i numbers-to-pl-words
+npm i spell-out-price
 ```
 and you can import all functions:
 ```
-import { spellOut, spellOutIntegerPrice, spellOutPrice } from 'numbers-to-pl-words';
+import { spellOut, spellOutIntegerPrice, spellOutPrice } from 'spell-out-price';
 ```
 
 ## Local Run:
