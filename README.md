@@ -1,4 +1,4 @@
-# numbersToWords
+# spellOutPrice
 Simple npm library to convert numbers to written form in polish language.
 
 this snippet:
