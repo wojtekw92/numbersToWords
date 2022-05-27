@@ -1,22 +1,22 @@
-import { numberToWords } from './numberConverter.js'
-import { generateCurrencyName, generatePennyName } from './currencyUnit.js';
+import { spellOut } from './numberConverter.js'
+import { getCurrencyName, getPennyName } from './currencyUnit.js';
 
-function convertIntPriceToWords(price, cents) {
-    let output = numberToWords(price);
-    output += generateCurrencyName(price);
-    output += ' i ' + numberToWords(cents);
-    output += ' ' + generatePennyName(cents);
+function spellOutIntegerPrice(price, cents) {
+    let output = spellOut(price);
+    output += ' ' + getCurrencyName(price);
+    output += ' i ' + spellOut(cents);
+    output += ' ' + getPennyName(cents);
     return output;
 }
 
-function convertPriceToWords(price) {
+function spellOutPrice(price) {
     const intPrice = Math.floor(price*100);
-    return convertIntPriceToWords(Math.floor(intPrice/100), intPrice%100);
+    return spellOutIntegerPrice(Math.floor(intPrice/100), intPrice%100);
 }
 
 
 export {
-    numberToWords,
-    convertIntPriceToWords,
-    convertPriceToWords,
+    spellOut,
+    spellOutIntegerPrice,
+    spellOutPrice,
 }

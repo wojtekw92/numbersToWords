@@ -4,7 +4,7 @@
  * @param {number} number The number to convert.
  * @returns {string} word represntation of provided nuaber.
  */
-export function numberToWords(number)
+export function spellOut(number)
 {
     number = Math.abs(number);
     const unity = [
@@ -60,6 +60,12 @@ export function numberToWords(number)
         [" biliard"," biliardy"," biliardów"],
         [" trylion"," tryliony"," trylionów"]];
 
+    const pluralRules = {
+        one: 0,
+        few: 1,
+        many: 2,
+    };
+
 
     let outputString = number === 0 ? 'zero' : '';
     let orderOfMagnitude = 0;
@@ -68,18 +74,12 @@ export function numberToWords(number)
         let teenIndex = 0;
         let tensIndex = Math.floor((number % 100)/10);
         let unityIndex = Math.floor(number % 10);
-        let k = 2;
+        let tmpNumber = number % 1000;
 
         if ( tensIndex == 1 && unityIndex > 0 ) {
             teenIndex = unityIndex;
             tensIndex = 0;
             unityIndex = 0;
-        }
-
-        if ( unityIndex == 1 && (hundredsIndex + tensIndex + teenIndex) == 0 ) {
-            k = 0;
-        } else if (unityIndex == 2 || unityIndex == 3 || unityIndex == 4) {
-            k = 1;
         }
 
         if ( hundredsIndex > 0 || tensIndex > 0 ||
@@ -89,12 +89,12 @@ export function numberToWords(number)
             temporaryString += tens[tensIndex];
             temporaryString += teen[teenIndex];
             temporaryString += unity[unityIndex];
-            temporaryString += groups[orderOfMagnitude][k];
+            temporaryString += groups[orderOfMagnitude][pluralRules[new Intl.PluralRules('pl-PL').select(tmpNumber)]];
             outputString = temporaryString + outputString;
         }
 
         orderOfMagnitude++;
-        number = ~~(number/1000);
+        number = Math.floor(number/1000);
     }
     return outputString.trim();
 }

@@ -1,11 +1,11 @@
 {
-  "name": "numbers-to-pl-words",
+  "name": "spell-out-price",
   "type": "module",
-  "version": "0.1.1",
-  "description": "convert numbers and prices to word represnatation in poilsh",
+  "version": "0.2.1",
+  "description": "spell out numbers and prices to word represnatation in poilsh",
   "main": "./dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
     "build": "./node_modules/.bin/esbuild ./src/index.js --format=esm --bundle --outfile=./dist/index.js --platform=node --target=node16.3 --minify"
   },
   "repository": {

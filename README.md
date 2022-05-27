@@ -3,7 +3,7 @@ Simple npm library to convert numbers to written form in polish language.
 
 this snippet:
 ```
-console.log('78346: ' + numberToWords(78346));
+console.log('78346: ' + spellOut(78346));
 ```
 will provide this output:
 ```
@@ -14,8 +14,8 @@ will provide this output:
 Library supports also currencies:
 The snippet below:
 ```
-console.log('47 291 237,31 ' + convertIntPriceToWords(47291237,31));
-console.log('47 291 237,31 ' + convertPriceToWords(47291237.31));
+console.log('47 291 237,31 ' + spellOutIntegerPrice(47291237, 31));
+console.log('47 291 237,31 ' + spellOutPrice(47291237.31));
 ```
 will give this output:
 ```
@@ -29,7 +29,7 @@ npm i numbers-to-pl-words
 ```
 and you can import all functions:
 ```
-import { numberToWords, convertIntPriceToWords, convertPriceToWords } from 'numbers-to-pl-words';
+import { spellOut, spellOutIntegerPrice, spellOutPrice } from 'numbers-to-pl-words';
 ```
 
 ## Local Run:
@@ -46,6 +46,6 @@ Prosta biblioteka do konwersji liczb i kwot na zapis tekstowy
 
 # TODO:
 
-- [ ] Write tests.
+- [x] Write tests.
 - [ ] Add types.
-- [x] Publish on NPM.
+- [ ] Publish on NPM.
