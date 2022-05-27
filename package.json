@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wojtekw92/numbersToWords.git"
+    "url": "git+git@github.com:wojtekw92/spellOutPrice.git.git"
   },
   "files": [
       "dist/index.js"
@@ -18,9 +18,9 @@
   "author": "Wojciech Wozniak <wwozniak92@gmail.com> (https://wwozniak.com)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/wojtekw92/numbersToWords/issues"
+    "url": "git@github.com:wojtekw92/spellOutPrice.git/issues"
   },
-  "homepage": "https://github.com/wojtekw92/numbersToWords#readme",
+  "homepage": "git@github.com:wojtekw92/spellOutPrice.git#readme",
   "dependencies": {},
   "devDependencies": {
     "esbuild": "^0.14.38",
