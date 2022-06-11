@@ -4,7 +4,7 @@ import { getCurrencyName, getPennyName } from './currencyUnit.js';
 function spellOutIntegerPrice(price, cents) {
     let output = spellOut(price);
     output += ' ' + getCurrencyName(price);
-    output += ' i ' + spellOut(cents);
+    output += ' ' + spellOut(cents);
     output += ' ' + getPennyName(cents);
     return output;
 }
