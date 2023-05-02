@@ -10,8 +10,8 @@ function spellOutIntegerPrice(price, cents) {
 }
 
 function spellOutPrice(price) {
-    const intPrice = Math.floor(price*100);
-    return spellOutIntegerPrice(Math.floor(intPrice/100), intPrice%100);
+    const intPrice = Math.ceil(price*100);
+    return spellOutIntegerPrice(Math.trunc(intPrice/100), intPrice%100);
 }
 
 

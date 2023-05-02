@@ -34,7 +34,7 @@ describe('numberConverter.js', () =>{
 
     test('Test spellOut method with numbert 2219', ()=>{
         const result = spellOut(2219);
-        expect(result).toEqual('dwa tysiące dwieście dziewietnaście');
+        expect(result).toEqual('dwa tysiące dwieście dziewiętnaście');
     });
 
     test('Test spellOut method with numbert 78346', ()=>{

@@ -1,7 +1,7 @@
 {
   "name": "spell-out-price",
   "type": "module",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "spell out numbers and prices to word represnatation in poilsh",
   "main": "./dist/index.js",
   "scripts": {

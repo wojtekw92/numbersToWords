@@ -28,7 +28,7 @@ export function spellOut(number)
         " szesnaście",
         " siedemnaście",
         " osiemnaście",
-        " dziewietnaście"];
+        " dziewiętnaście"];
     const tens = [
         "",
         " dziesięć",
